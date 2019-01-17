@@ -1,0 +1,95 @@
+{
+    "faction": "Ancient",
+    "cards": [
+        {
+            "name": "Eye of the Time Dragon",
+            "effect": {
+                "command": "Select a minion and take up to the top 5 cards of its /ancestry/. Deal 1 damage to the selected minion for each card taken."
+            },
+            "flavor": "An ancient, beautiful gem that sees you as you see it.",
+            "count": 1
+        },
+        {
+            "name": "Nerisaurus",
+            "effect": {
+                "hex": "Select any 2 minions. For each minion selected, take any card from its /ancestry/, and put the card on the top of the other minion's /ancestry/.",
+                "ancestor": "When a card is summoned over this minion, take the top card of any minion's /ancestry/ and swap it with this card, preserving position."
+            },
+            "flavor": "An elder dinosaur said to be the ancestor of many.",
+            "count": 2
+        },
+        {
+            "name": "Mandrake",
+            "effect": {
+                "trait": "Deal 2 damage to any enemy minion whenever they switch. Neither player can summon a non-Ancient card over this minion.",
+                "ancestor": "Deal 2 damage to any friendly minion whenever they switch."
+            },
+            "flavor": "Nobody knows whether this is a creature, a plant, or a bit of both.",
+            "count": 2
+        },
+        {
+            "name": "Diamond-scaled Raptor",
+            "effect": {
+                "trait": "Whenever this minion is targetted for a /Hex/ effect, add the top card of the deck to the top of this minion's /ancestry/.",
+                "ancestor": "When this minion resolves its /Hex/ effect, reshuffle this card, and activate this minion's /Hex/ effect again."
+            },
+            "flavor": "Those enchanted by the diamond will find themselves riddled with holes.",
+            "count": 2
+        },
+        {
+            "name": "Salamancer",
+            "effect": {
+                "hex": "Reshuffle up to top 3 cards from this minion's /ancestry/. For each card reshuffled, deal 1 damage to opposing minion.",
+                "ancestor": "Whenever your opponent draws an extra card from the deck, you may choose to put this card over this minion and activate this card's /Hex/ effect."
+            },
+            "flavor": "A fiery reptile that fires... fire.",
+            "count": 2
+        },
+        {
+            "name": "Stone Serpent",
+            "effect": {
+                "hex": "You can choose to reshuffle a card from your hand to immediately activate its /Command/ effect.",
+                "command": "Take the top 3 cards from this minion's /ancestry/, and top 3 cards from the deck. Choose any 3 of these cards to put back in the /ancestry/, and return the rest on top of the deck."
+            },
+            "flavor": "A serpent statue that feels very much alive.",
+            "count": 2
+        },
+        {
+            "name": "Dragon Hatchling",
+            "effect": {
+                "hex": "Add all other 'Dragon Hatchlings' from any minion's /ancestry/ to this minon's /ancestry/.",
+                "ancestor": "At the end of your turn, deal 1 damage to the opposing minion."
+            },
+            "flavor": "Already lethal to most in its infancy.",
+            "count": 5
+        },
+        {
+            "name": "Hydra",
+            "effect": {
+                "command": "Return the top card from all friendly minion's /ancestry/. Activate any /Hex/ effect of the returned cards, from left to right.",
+                "ancestor": "At the end of your turn, you may choose to swap this card with a card from your hand."
+            },
+            "flavor": "A beast of legend, currently with 4 heads.",
+            "count": 2
+        }, 
+        {
+            "name": "Reptile Guardian",
+            "effect": {
+                "command": "If at an inner rank, switches to the nearest outer rank. Otherwise, switch to the nearest inner rank.",
+                "switch": "After switching, put the top card of opposing minion's /ancestry/ to this minion's /ancestry/.",
+                "trait": "When an effect is targeting this minion, you can cancel the effect by putting 2 cards from your hand on top of that minion's /ancestry/."
+            },
+            "flavor": "An armored, humanoid caiman with sword and shield.",
+            "count": 2
+        }
+    ],
+    "boss": {
+        "name": "Arathurg the Time Dragon",
+        "summon": "On a minion that is gaining /ancestry/, if that minion end up having 10 or more /ancestry/.",
+        "return": "When this minion loses 4 or more /ancestry/ in a turn.",
+        "effect": {
+            "command": "Deal 5 damage to a minion of your choice. Take the top 3 card from the targeted minion's /ancestry/ and put it on top of this minion's /ancestry/.",
+            "trait": "For each card added to its /ancestry/, reshuffle the bottom card from its /ancestry/."
+        }
+    }
+}

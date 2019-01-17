@@ -1,0 +1,49 @@
+{
+    "faction": "Core",
+    "cards": [
+        {
+            "name": "The Witch",
+            "effect": {
+                "hex": "Select one of the top 3 cards of this minion's /ancestry/ and switch it with the top card.",
+                "ancestor": "At the end of your turn, you can reshuffle this card to activate this minion's /Hex/ ability."
+            },
+            "flavor": "A mysterious old lady said to be capable of polymorphism.",
+            "count": 2
+        },
+        {
+            "name": "Lost Mistress",
+            "effect": {
+                "hex": "Return up to the top 3 cards of its /ancestry/ back to the bottom of the deck in any order. Activate the /Hex/ ability of all cards added back to the deck."
+            },
+            "flavor": "A mistress of irresistible beauty.",
+            "count": 2
+        },
+        {
+            "name": "Divinier",
+            "effect": {
+                "command": "If this minion is on the outer ranks, add the top card in any minion's /ancestry/ to your hand. Otherwise, add the top 2 cards from the deck to the /ancestry/ of a minion.",
+                "trait": "Whenever a card is going to be summoned over this minion, any player can return 2 cards from your hand to the deck to cancel it."
+            },
+            "flavor": "Exudes an aura of divinity.",
+            "count": 2
+        },
+        {
+            "name": "Admiral",
+            "effect": {
+                "hex": "Activate the /Command/ ability of the minion on the left or on the right.",
+                "command": "Deal 2 damage to the opposing minion."
+            },
+            "flavor": "A captain of the sea that commands the wind. Maybe.",
+            "count": 2
+        },
+        {
+            "name": "The Imp",
+            "effect": {
+                "trait": "Whenever this minion is targeted by a /Hex/ or /Command/ effect, before it resolves, you can choose to put a card from your hand on top of this minion. Activate any /Hex/ effects.",
+                "ancestor": "At the start of your turn, you can choose to reshuffle this card, and draw one card."
+            },
+            "flavor": "A playful little creature that disappears on the blink of an eye.",
+            "count": 2
+        }
+    ]
+}

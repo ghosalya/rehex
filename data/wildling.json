@@ -1,0 +1,101 @@
+{
+    "faction": "Wildling",
+    "cards": [
+        {
+            "name": "Egg Runner",
+            "effect": {
+                "hex": "Activate this minion's /Command/ effect.",
+                "command": "Deal 2 damage to the opposing minion, then switch to a rank of your choice.",
+                "ancestor": "At the start of your turn, return this card to your hand."
+            },
+            "flavor": "It's quick enough to steal an egg without the egg noticing.",
+            "count": 1
+        },
+        {
+            "name": "Blue Hyena",
+            "effect": {
+                "switch": "Before switching, deal 2 damage to the opposing minion.",
+                "ancestor": "At the end of your turn, this minion deals 2 damage to itself. Reshuffle this card whenever it switches with another minion with 'Blue Hyena' in its /ancestry/."
+            },
+            "flavor": "Blue is the color of blue hyena.",
+            "count": 1
+        },
+        {
+            "name": "Ape Baron",
+            "effect": {
+                "hex": "On the side where this minion is summoned, the summoning player switches the rank of all minions."
+            },
+            "flavor": "It takes the wisdom of a baron to change things. Or the smell of an ape.",
+            "count": 2
+        },
+        {
+            "name": "Wandering Wisp",
+            "effect": {
+                "switch": "After switching, heals adjacent minions by 2.",
+                "ancestor": "After switching, heals adjacent minions by 1."
+            },
+            "flavor": "Wisps are the fabled peacekeeper of the woods.",
+            "count": 2
+        },
+        {
+            "name": "Voodo Frog",
+            "effect": {
+                "trait": "Whenever a card is summoned over a friendly minion, this minion switches rank with another minion of the summoner's choice.",
+                "switch": "After switching, add the top card of the deck to the /ancestry/ of the minion that switched with this minion."
+            },
+            "flavor": "Some said the purple smoke coming out of its body is the source of magic.",
+            "count": 2
+        },
+        {
+            "name": "Wounded Wolf",
+            "effect": {
+                "trait": "If this card is on the outer ranks, heal this minion by 2 at the end of your turn.",
+                "switch": "After switching, this minion damage itself by 2, unless it switches with another 'Wounded Wolf'."
+            },
+            "flavor": "Lick to tend.",
+            "count": 2
+        }, 
+        {
+            "name": "Blade Mantis",
+            "effect": {
+                "trait": "If this minion is at the outer ranks, at the end of your turn, deal 2 damage to opposing minion."
+            },
+            "flavor": "They're so sharp it hurts when you look at them.",
+            "count": 2
+        },
+        {
+            "name": "Slippery Red Eel",
+            "effect": {
+                "trait": "At the start or end of your turn, switch this minion to the minion on the right.",
+                "ancestor": "Whenever this minion switches rank, you can reshuffle this card for this minion to do another switch."
+            },
+            "flavor": "Red",
+            "count": 1
+        },
+        {
+            "name": "Slippery Blue Eel",
+            "effect": {
+                "trait": "At the start or end of your turn, switch this minion to the minion on the left.",
+                "ancestor": "Whenever this minion switches rank, you can reshuffle this card for this minion to do another switch."
+            },
+            "flavor": "Blue",
+            "count": 1
+        },
+        {
+            "name": "Spiderling",
+            "effect": {
+                "switch": "Before switching, select the opposing minion. After switching, switch the selected minion to switch with the opposing minion."
+            },
+            "flavor": "Their sticky web has proven to be a superpower.",
+            "count": 2
+        }
+    ],
+    "boss": {
+        "name": "Mountain Giant",
+        "summon": "When a card is summoned to make the number of Wildlings to be exactly 5, on the minion being summoned over.",
+        "return": "When the opposing minion is non-Wildling.",
+        "effect": {
+            "trait": "Whenever a switch happens, draw a card from the deck for each minion switching. When this minion is returned to the boss pile, you can reshuffle any number of cards from your hand; damage a random enemy minion by 1 for each card returned."
+        }
+    }
+}
