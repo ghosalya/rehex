@@ -19,7 +19,7 @@
         {
             "name": "Lost Mistress",
             "effect": {
-                "hex": "Return up to the top 3 cards of its /ancestry/ back to the bottom of the deck in any order. Activate the /Hex/ ability of all cards added back to the deck."
+                "hex": "Reshuffle up to the top 3 cards of its /ancestry/. Activate the /Hex/ ability of all cards added back to the deck."
             },
             "flavor": "A mistress of irresistible beauty.",
             "count": 2
@@ -43,7 +43,7 @@
             "count": 2
         },
         {
-            "name": "The Imp",
+            "name": "Imp",
             "effect": {
                 "trait": "Whenever this minion is targeted by a /Hex/ or /Command/ effect, before it resolves, you can choose to put a card from your hand on top of this minion. Activate any /Hex/ effects.",
                 "ancestor": "At the start of your turn, you can choose to reshuffle this card, and draw one card."

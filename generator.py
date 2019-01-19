@@ -13,6 +13,14 @@ import pygame
 from constants import *
 from dataloader import FactionData, BossData, CardData
 
+def split_list(seq, n=8):
+    if len(seq) <= n:
+        return seq, []
+    else:
+        return seq[:n], seq[n:]
+
+
+
 
 class CardGenerator:
     def __init__(self):
@@ -132,32 +140,18 @@ class CardGenerator:
             if faction_data.boss is not None:
                 bosses.append(faction_data.boss)
 
-            page_numbers = 1 + math.ceil(len(faction_data.cards) / 8)
-            for page in range(page_numbers):
+            while len(cards) > 0:
                 self.surface.fill(BGCOLOR)
                 self.metasurf.fill(TRANSPARENT)
-                cards_to_draw = cards[page * 8 : (page+1) * 8]
+                cards_to_draw, cards = split_list(cards, n=8)
                 self.draw_page(cards_to_draw)
 
-            # last batch
-            self.surface.fill(BGCOLOR)
-            self.metasurf.fill(TRANSPARENT)
-            cards_to_draw = cards[page_numbers*8:]
-            print("Lastbatch", len(cards_to_draw))
-            self.draw_page(cards_to_draw)
-
         # bosses
-        boss_pageno = 1 + math.floor(len(bosses) / 8)
-        for page in range(boss_pageno):
+        while len(bosses) > 0:
             self.surface.fill(BGCOLOR)
             self.metasurf.fill(TRANSPARENT)
-            cards_to_draw = bosses[page * 8 : (page+1) * 8]
+            cards_to_draw, bosses = split_list(bosses, n=8)
             self.draw_page(cards_to_draw)
-        self.surface.fill(BGCOLOR)
-        self.metasurf.fill(TRANSPARENT)
-        cards_to_draw = bosses[page*8:]
-        self.draw_page(cards_to_draw)
-
 
         pygame.quit()
         sys.exit()

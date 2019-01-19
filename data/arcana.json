@@ -1,0 +1,102 @@
+{
+    "faction": "Arcana",
+    "cards": [
+        {
+            "name": "Clockwork Goblin",
+            "effect": {
+                "hex": "Both players draw 1 card.",
+                "ancestor": "Either player may place this card on top of this minion and activate this card's /Hex/ ability (this counts as a Hex)."
+            },
+            "flavor": "A mechanical mercenary that can reassemble itself.",
+            "count": 2
+        },
+        {
+            "name": "Cursed Doll",
+            "effect": {
+                "hex": "Select 2 friendly minions. One takes 2 damage, the other heals 4."
+            },
+            "flavor": "Being next to one of these can make one better or worse.",
+            "count": 2
+        },
+        {
+            "name": "Marionette",
+            "effect": {
+                "hex": "Until the start of your next turn, this Minion cannot be damaged.",
+                "ancestor": "When an effect is selecting a target, you can reshuffle this card to force the effect to target this minion."
+            },
+            "flavor": "A mechanical man who seems not to be in control of himself.",
+            "count": 2
+        },
+        {
+            "name": "Alchemizer",
+            "effect": {
+                "hex": "Select 2 friendly minions in an order. For each, this minion deals 1 damage to itself, then activate the target's /Hex/ ability.",
+                "trait": "Whenever a minion tries to activate its /Command/ effect, you can choose to have that minion do 2 damage to this minion and cancel the /Command/ effect."
+            },
+            "flavor": "He's always bleeding.. Help?",
+            "count": 2
+        },
+        {
+            "name": "Puppet Ranger",
+            "effect": {
+                "hex": "Damage the minion of opposite rank by 2, and damage both minions of adjacent ranks by 1."
+            },
+            "flavor": "A moving puppet; as soft as silk, as deadly as thorns.",
+            "count": 2
+        },
+        {
+            "name": "Half-Nova",
+            "effect": {
+                "hex": "Activate this minion's /Command/ effect, and then activate it again if the opposing minion has lower HP that this minion.",
+                "command": "Deal 1 damage to the opposing minion. If the opposing minion does not have less HP than this minion, deal 1 more damage to it."
+            },
+            "flavor": "A serpent statue that feels very much alive.",
+            "count": 2
+        },
+        {
+            "name": "Clayman",
+            "effect": {
+                "hex": "Reshuffle the top 3 cards in this minion's /ancestry/. If this minion has less than 3 cards in its /ancestry/, reshuffle all cards in its /ancestry/ deal 2 damage to itself.",
+                "ancestor": "Whenever this minion deals damage, heal its HP by 2."
+            },
+            "flavor": "A humanoid monster made of chocolate.",
+            "count": 2
+        },
+        {
+            "name": "House of Tricks",
+            "effect": {
+                "hex": "Reshuffle any card from this minion's /ancestry/. If the reshuffled card has a /hex/ effect, activate the /Hex/ effect of a minion of your choice.",
+                "trait": "Whenever the opposing minion activates any of its effect, once it is resolved, activate this minion's /hex/ effect."
+            },
+            "flavor": "Mysterious house with moving furnitures.",
+            "count": 2
+        },
+        {
+            "name": "Arcana Golem",
+            "effect": {
+                "hex": "Switch with a minion on the left or on the right.",
+                "switch": "Once before the switch and once after, activate the /Hex/ effect of the switching minion."
+            },
+            "flavor": "A towering golem overflowing with magic.",
+            "count": 2
+        },
+        {
+            "name": "Storm Incarnate",
+            "effect": {
+                "hex": "A random enemy minion deals 1 damage to this minion.",
+                "trait": "Whenever a minion deals damage to this minion, deal 1 damage to it, and deal 1 damage to a random enemy minion."
+            },
+            "flavor": "An uncontrollable mass of cloud and lightning.",
+            "count": 2
+        }
+    ],
+    "boss": {
+        "name": "Arcanatorium",
+        "summon": "On a minion taking damage, when all minion has 7 or less HP after the damage.",
+        "return": "When a minion gains HP.",
+        "effect": {
+            "hex": "Deal 1 damage to itself, and 2 damage to all other minions.",
+            "trait": "Whenever a minion tries to activate its /Hex/ effect, you can cancel it and activate this minion's /Hex/ effect."
+        }
+    }
+}
