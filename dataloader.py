@@ -30,7 +30,7 @@ class CardData(object):
             self.name.lower().replace(" ", "")
         )
 
-        for file_format in (".jpg", ".png"):
+        for file_format in (".jpg", ".png", ".gif"):
             if os.path.exists(prefix + file_format):
                 return prefix + file_format
         

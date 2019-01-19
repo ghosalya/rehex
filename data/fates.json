@@ -1,0 +1,96 @@
+{
+    "faction": "Fates",
+    "cards": [
+        {
+            "name": "Dreamcatcher",
+            "effect": {
+                "hex": "Look at the top 4 cards of the deck. Then, place them back in any order.",
+                "switch": "Name the top card of the deck. If named incorrectly, switch back with the same switching minion (this is another switch event)."
+            },
+            "flavor": "Dreams are signs of what's to come, but the sometimes don't cone true.",
+            "count": 2
+        },
+        {
+            "name": "Constellation",
+            "effect": {
+                "hex": "Activate this minion's /Command/ effect, but do not reshuffle on naming incorrectly.",
+                "command": "Name the top card of the deck. If named correctly, you can activate its /hex/ effect. If named incorrectly, reshuffle that card."
+            },
+            "flavor": "When the fate amongst the stars are against you, there is not much to do but plea.",
+            "count": 2
+        },
+        {
+            "name": "Shards Reflection",
+            "effect": {
+                "hex": "Deal 2 damage to the opposing minion. Then name the top card of the deck. If named correctly, add it to this minion's /ancestry/ and activate this minion's /Hex/ effect again.",
+                "reshuffle": "Instead of reshuffled into the deck, this card goes to the enemy's hand."
+            },
+            "flavor": "You can see yourself within these shards. Or, the you inside the shards can see yourself.",
+            "count": 2
+        },
+        {
+            "name": "Snake Eyes",
+            "effect": {
+                "hex": "Name a card. If that card is in your opponent's hand, your opponent reshuffles all his/her hand cards, and draw that many cards.",
+                "trait": "Whenever the opponent draws or name a card, deal 1 damage to the opposing minion."
+            },
+            "flavor": "The cunning eyes that sees through.",
+            "count": 2
+        },
+        {
+            "name": "Comet Blaze",
+            "effect": {
+                "hex": "Without looking at the card, you may rearrage up to 8 top cards of the deck.",
+                "reshuffle": "Instead of reshuffling, put this card on top of the deck. The deck is not shuffled."
+            },
+            "flavor": "The trails in the sky, inevitable..",
+            "count": 2
+        },
+        {
+            "name": "Crossing Paths",
+            "effect": {
+                "hex": "Look at the top 3 cards of the deck. Add one to your hand, and reshuffle the rest.",
+                "reshuffle": "Your opponent choose a card from his/her hand. That card will be reshuffled after this card is reshuffled."
+            },
+            "flavor": "Intriguing how fates intertwine.",
+            "count": 2
+        },
+        {
+            "name": "Glowing Tapestry",
+            "effect": {
+                "hex": "You can put any number of card from your hand to the top of the deck, in any order.",
+                "trait": "Whenever you name a card correctly, this minion deals 2 damage to a random enemy minion."
+            },
+            "flavor": "Masterful craft often comes with a power that is almost supernatural.",
+            "count": 2
+        },
+        {
+            "name": "From Light, Darkness",
+            "effect": {
+                "hex": "Reshuffle a card from this minion's /ancestry/. Then you can order the rest of its /ancestry/.",
+                "reshuffle": "Before reshuffling, deal 2 damage to opposing minion, and name a card. If named correctly, you can summon a Fates minion for free."
+            },
+            "flavor": "Prophecy foretolds of an unending cycle.",
+            "count": 3
+        },
+        {
+            "name": "From Darkness, Light",
+            "effect": {
+                "hex": "Reshuffle a card from this minion's /ancestry/. Then you can look at the top 2 cards of the deck.",
+                "reshuffle": "Before reshuffling, heals 1 HP and name a card. If named correctly, you can summon a Fates minion for free."
+            },
+            "flavor": "Prophecy foretolds of an unending cycle.",
+            "count": 3
+        }
+    ],
+    "boss": {
+        "name": "Three Sisters",
+        "summon": "When the 3rd or more correct naming occurs.",
+        "return": "At the end of the turn, when no card is named correctly.",
+        "effect": {
+            "hex": "All naming is considered correct until the next player's turn.",
+            "command": "Name the top card of the deck and add that card to this minion's /ancestry/. If named correctly, activate both its /Hex/ and /Command/ effect.",
+            "trait": "At the end of the turn, the turn player must name the top card of the deck, and draw that card if named correctly."
+        }
+    }
+}

@@ -46,7 +46,7 @@
             "name": "Imp",
             "effect": {
                 "trait": "Whenever this minion is targeted by a /Hex/ or /Command/ effect, before it resolves, you can choose to put a card from your hand on top of this minion. Activate any /Hex/ effects.",
-                "ancestor": "At the start of your turn, you can choose to reshuffle this card, and draw one card."
+                "reshuffle": "Draw one card."
             },
             "flavor": "A playful little creature that disappears on the blink of an eye.",
             "count": 2

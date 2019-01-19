@@ -13,7 +13,8 @@
         {
             "name": "Cursed Doll",
             "effect": {
-                "hex": "Select 2 friendly minions. One takes 2 damage, the other heals 4."
+                "hex": "Select 2 friendly minions. One takes 2 damage, the other heals 4.",
+                "reshuffle": "You may choose to reshuffle another card instead of this card."
             },
             "flavor": "Being next to one of these can make one better or worse.",
             "count": 2
@@ -39,7 +40,8 @@
         {
             "name": "Puppet Ranger",
             "effect": {
-                "hex": "Damage the minion of opposite rank by 2, and damage both minions of adjacent ranks by 1."
+                "hex": "Damage the minion of opposite rank by 2, and damage both minions of adjacent ranks by 1.",
+                "reshuffle": "Activate this card's /Hex/ effect."
             },
             "flavor": "A moving puppet; as soft as silk, as deadly as thorns.",
             "count": 2

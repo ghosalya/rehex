@@ -4,7 +4,8 @@
         {
             "name": "Eye of the Time Dragon",
             "effect": {
-                "command": "Select a minion and take up to the top 5 cards of its /ancestry/. Deal 1 damage to the selected minion for each card taken."
+                "command": "Select a minion and take up to the top 5 cards of its /ancestry/. Deal 1 damage to the selected minion for each card taken.",
+                "reshuffle": "You can select a minion. Add the top 3 cards in this minion's /ancestry/ and add it to the targetted minion's /ancestry/."
             },
             "flavor": "An ancient, beautiful gem that sees you as you see it.",
             "count": 1
@@ -58,7 +59,8 @@
             "name": "Dragon Hatchling",
             "effect": {
                 "hex": "Add all other 'Dragon Hatchlings' from any minion's /ancestry/ to this minon's /ancestry/.",
-                "ancestor": "At the end of your turn, deal 1 damage to the opposing minion."
+                "ancestor": "At the end of your turn, deal 1 damage to the opposing minion.",
+                "reshuffle": "Deal 1 damage to itself."
             },
             "flavor": "Already lethal to most in its infancy.",
             "count": 5

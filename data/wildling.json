@@ -58,7 +58,8 @@
         {
             "name": "Blade Mantis",
             "effect": {
-                "trait": "If this minion is at the outer ranks, at the end of your turn, deal 2 damage to opposing minion."
+                "trait": "If this minion is at the outer ranks, at the end of your turn, deal 2 damage to opposing minion.",
+                "reshuffle": "If thus minion is at the outer ranks, deal 2 damage to opposing minion."
             },
             "flavor": "They're so sharp it hurts when you look at them.",
             "count": 2
@@ -70,7 +71,7 @@
                 "ancestor": "Whenever this minion switches rank, you can reshuffle this card for this minion to do another switch."
             },
             "flavor": "Red",
-            "count": 1
+            "count": 2
         },
         {
             "name": "Slippery Blue Eel",
@@ -79,12 +80,13 @@
                 "ancestor": "Whenever this minion switches rank, you can reshuffle this card for this minion to do another switch."
             },
             "flavor": "Blue",
-            "count": 1
+            "count": 2
         },
         {
             "name": "Spiderling",
             "effect": {
-                "switch": "Before switching, select the opposing minion. After switching, switch the selected minion to switch with the opposing minion."
+                "switch": "Before switching, select the opposing minion. After switching, switch the selected minion to switch with the opposing minion.",
+                "reshuffle": "Reshuffles the top card of the opposing minion after this card is reshuffled."
             },
             "flavor": "Their sticky web has proven to be a superpower.",
             "count": 2

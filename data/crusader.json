@@ -4,7 +4,8 @@
         {
             "name": "Prince of Dawn",
             "effect": {
-                "command": "Deal damage to the opposing minion equal to the number of cards in its /ancestry/."
+                "command": "Deal damage to the opposing minion equal to the number of cards in its /ancestry/.",
+                "reshuffle": "Activate the /Command/ effect of a minion of your choice."
             },
             "flavor": "The formidable prince whose technique has proven lethal.",
             "count": 1
