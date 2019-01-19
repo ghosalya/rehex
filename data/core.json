@@ -2,6 +2,12 @@
     "faction": "Core",
     "cards": [
         {
+            "name": "Slime",
+            "flavor": "A summoned slime, at your command.",
+            "effect": {},
+            "count": 8
+        },
+        {
             "name": "The Witch",
             "effect": {
                 "hex": "Select one of the top 3 cards of this minion's /ancestry/ and switch it with the top card.",

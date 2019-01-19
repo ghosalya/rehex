@@ -132,7 +132,7 @@ class CardGenerator:
             if faction_data.boss is not None:
                 bosses.append(faction_data.boss)
 
-            page_numbers = len(faction_data.cards) // 8
+            page_numbers = 1 + math.ceil(len(faction_data.cards) / 8)
             for page in range(page_numbers):
                 self.surface.fill(BGCOLOR)
                 self.metasurf.fill(TRANSPARENT)
@@ -143,10 +143,11 @@ class CardGenerator:
             self.surface.fill(BGCOLOR)
             self.metasurf.fill(TRANSPARENT)
             cards_to_draw = cards[page_numbers*8:]
+            print("Lastbatch", len(cards_to_draw))
             self.draw_page(cards_to_draw)
 
         # bosses
-        boss_pageno = len(bosses) // 8
+        boss_pageno = 1 + math.floor(len(bosses) / 8)
         for page in range(boss_pageno):
             self.surface.fill(BGCOLOR)
             self.metasurf.fill(TRANSPARENT)

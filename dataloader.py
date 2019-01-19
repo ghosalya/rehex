@@ -1,3 +1,4 @@
+import os
 import json
 import constants
 
@@ -19,10 +20,21 @@ class CardData(object):
         self.effect = data_dict["effect"]
         self.flavor = data_dict.get("flavor", "")
         self.count = data_dict.get("count", 1)
-        self.image = data_dict.get("image", "")
 
         self.effect_strings = self.get_effect_strings()
         self.flavor_strings = self.get_flavor_strings()
+
+    @property
+    def image(self):
+        prefix = "img/{}".format(
+            self.name.lower().replace(" ", "")
+        )
+
+        for file_format in (".jpg", ".png"):
+            if os.path.exists(prefix + file_format):
+                return prefix + file_format
+        
+        return None
 
     def get_effect_strings(self):
         string_list = []

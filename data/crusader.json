@@ -10,7 +10,7 @@
             "count": 1
         },
         {
-            "name": "Balista",
+            "name": "Ballista",
             "effect": {
                 "command": "Deals 2 damage to the opposing minion. If this minion is at the outer ranks, deal 2 damage to the minion adjacet to the opposing minion.",
                 "switch": "If switching to an outer rank, deal 2 damage to itself."
