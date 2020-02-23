@@ -1,0 +1,19 @@
+{
+    "faction": "Environment",
+    "layout": "environment",
+    "cards": [
+        {
+            "name": "Forest",
+            "effect": {
+                "play": "P1 gains (2) health. P2 gains (2) health.",
+                "damage": "When damaged, it reduces the player's value by 1. When it his 0, reduces opponent's value instead. Becomes Barrens when both values are 0.",
+                "repair": "Repairing player's value increase by 1 (no upper limit)."
+            },
+            "value": {
+                "value": 4
+            },
+            "flavor": "buzz buzz",
+            "count": 1
+        }
+    ]
+}

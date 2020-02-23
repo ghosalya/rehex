@@ -19,6 +19,7 @@ class CardData(object):
         self.faction = faction
         self.layout = layout
         self.effect = data_dict["effect"]
+        self.value = data_dict.get("value", {})
         self.flavor = data_dict.get("flavor", "")
         self.count = data_dict.get("count", 1)
 
@@ -36,6 +37,18 @@ class CardData(object):
                 return prefix + file_format
         
         return None
+
+    def get_value_strings(self):
+        top = ""
+        bottom = []
+
+        for k, v in self.value.items():
+            if k == constants.TOP_VALUE:
+                top = str(v)
+            else:
+                bottom.append("| {}: {} |".format(str(k).upper(), str(v)))
+        
+        return top, bottom
 
     def get_effect_strings(self):
         string_list = []

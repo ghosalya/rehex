@@ -83,8 +83,8 @@ class CardGenerator:
             relative to the screen grids. X must take an integer between 0 to
             3, while Y can only be 0 or 1. (For 4x2 display).
         """
-        start_x = position[0] * (windowWidth / 4)
-        start_y = position[1] * (windowHeight / 2)
+        start_x = position[0] * (windowWidth // 4)
+        start_y = position[1] * (windowHeight // 2)
 
         self.surface.blit(
             self.layouts[card.layout],
@@ -121,7 +121,27 @@ class CardGenerator:
             self.draw_text(FLAVOR, text_position, text)
             i += 1
 
-    def draw_text(self, field, center, text):
+        # handling values
+        top, bottom = card.get_value_strings()
+
+        if top > "":
+            text_position = (start_x + 820, start_y + 70)
+            pygame.draw.circle(self.surface, WTF, text_position, 50)
+            self.draw_text(NAME, text_position, top)
+
+        for bi in range(len(bottom)):
+            bottom_text = bottom[bi]
+            text_position = (start_x + 75 + 175*bi, start_y + 1180)
+            self.draw_text(
+                EFFECT, text_position, bottom_text, 
+                bgcolor=self.get_color_wheel(bi)
+            )
+
+    def get_color_wheel(self, index):
+        colors = [PURPLE, GREEN, CYAN, SILVER, WTF]
+        return colors[index % len(colors)]
+
+    def draw_text(self, field, center, text, bgcolor=None):
         text_color = BLACK if field in (NAME, EFFECT) else GREY
         text_to = self.fonts[field].render(text, True, text_color)
         text_ro = text_to.get_rect()
@@ -132,6 +152,8 @@ class CardGenerator:
         else:
             text_ro.center = center
         self.metasurf.blit(text_to, text_ro)
+        if bgcolor:
+            pygame.draw.rect(self.surface, bgcolor, text_ro)
 
     def generate(self):
         os.makedirs("./res/", exist_ok=True)

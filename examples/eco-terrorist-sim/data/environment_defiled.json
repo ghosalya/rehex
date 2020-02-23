@@ -1,0 +1,35 @@
+{
+    "faction": "Environment - Defiled",
+    "layout": "environment_defiled",
+    "cards": [{
+            "name": "Barren",
+            "effect": {
+                "play": "If 2 or more Barrens are at play, remove this card. Add a Wasteland and play it.",
+                "damage": "Transform a random Forest in play to Barrens",
+                "repair": "Becomes Forest with 1/1",
+                "value": 0
+            },
+            "flavor": "buzz buzz",
+            "count": 1
+        },
+        {
+            "name": "Wasteland",
+            "effect": {
+                "play": "P1 lose 3 health. P2 lose 3 health.",
+                "damage": "Increase player's health loss by 2 for the damaging player. If this card has a total of 10 damage or more, add and play an Earthquake.",
+                "repair": "Decrease health loss by 1 for the repairing player. If either value hits 0, becomes Barrens.",
+                "value": -2
+            },
+            "flavor": "buzz buzz",
+            "count": 1
+        },
+        {
+            "name": "Earthquake",
+            "effect": {
+                "play": "[Disaster] All cards on the field are sent back to their corresponding decks."
+            },
+            "flavor": "buzz buzz",
+            "count": 1
+        }
+    ]
+}
