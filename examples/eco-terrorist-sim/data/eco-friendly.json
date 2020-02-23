@@ -1,0 +1,14 @@
+{
+    "faction": "Eco-Friendly",
+    "layout": "eco_friendly",
+    "cards": [
+        {
+            "name": "Beexagon",
+            "effect": {
+                "trait": "do stuff"
+            },
+            "flavor": "buzz buzz",
+            "count": 1
+        }
+    ]
+}

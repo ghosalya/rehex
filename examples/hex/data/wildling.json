@@ -1,5 +1,6 @@
 {
     "faction": "Wildling",
+    "layout": "wildling",
     "cards": [
         {
             "name": "Egg Runner",
@@ -9,7 +10,7 @@
                 "ancestor": "At the start of your turn, return this card to your hand."
             },
             "flavor": "It's quick enough to steal an egg without the egg noticing.",
-            "count": 1
+            "count": 2
         },
         {
             "name": "Blue Hyena",
@@ -18,7 +19,7 @@
                 "ancestor": "At the end of your turn, this minion deals 2 damage to itself. Reshuffle this card whenever it switches with another minion with 'Blue Hyena' in its /ancestry/."
             },
             "flavor": "Blue is the color of blue hyena.",
-            "count": 1
+            "count": 2
         },
         {
             "name": "Ape Baron",

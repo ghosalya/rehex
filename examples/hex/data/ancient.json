@@ -1,5 +1,6 @@
 {
     "faction": "Ancient",
+    "layout": "ancient",
     "cards": [
         {
             "name": "Eye of the Time Dragon",
@@ -68,7 +69,7 @@
         {
             "name": "Hydra",
             "effect": {
-                "command": "Return the top card from all friendly minion's /ancestry/. Activate any /Hex/ effect of the returned cards, from left to right.",
+                "command": "Reshuffle the top card from all friendly minion's /ancestry/. Activate any /Hex/ effect of the returned cards, from left to right.",
                 "ancestor": "At the end of your turn, you may choose to swap this card with a card from your hand."
             },
             "flavor": "A beast of legend, currently with 4 heads.",
@@ -90,7 +91,7 @@
         "summon": "On a minion that is gaining /ancestry/, if that minion end up having 10 or more /ancestry/.",
         "return": "When this minion loses 4 or more /ancestry/ in a turn.",
         "effect": {
-            "command": "Deal 5 damage to a minion of your choice. Take the top 3 card from the targeted minion's /ancestry/ and put it on top of this minion's /ancestry/.",
+            "command": "Deal 6 damage to a minion of your choice. Take the top 3 card from the targeted minion's /ancestry/ and put it on top of this minion's /ancestry/.",
             "trait": "For each card added to its /ancestry/, reshuffle the bottom card from its /ancestry/."
         }
     }

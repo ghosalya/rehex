@@ -5,13 +5,14 @@
 #                                                                             #
 #-----------------------------------------------------------------------------#
 
+import os
 import sys
 import math
 import random
 import pygame
 
-from constants import *
-from dataloader import FactionData, BossData, CardData
+from tcgen.constants import *
+from tcgen.dataloader import FactionData, BossData, CardData
 
 def split_list(seq, n=8):
     if len(seq) <= n:
@@ -29,9 +30,9 @@ class CardGenerator:
         
         self.pages = 0
         self.layouts = {
-            faction: pygame.image.load("layout/{}.png"
-                                       .format(faction.lower()))
-            for faction in FACTION_LIST
+            layout.split(".")[0].lower(): pygame.image.load("layout/{}".format(layout))
+            for layout in os.listdir("./layout/")
+            if layout.split(".")[-1] in ("png", "jpg")
         }
 
     def _initialize_fonts(self):
@@ -86,7 +87,7 @@ class CardGenerator:
         start_y = position[1] * (windowHeight / 2)
 
         self.surface.blit(
-            self.layouts[card.faction],
+            self.layouts[card.layout],
             (start_x, start_y)
         )
 
@@ -133,8 +134,9 @@ class CardGenerator:
         self.metasurf.blit(text_to, text_ro)
 
     def generate(self):
+        os.makedirs("./res/", exist_ok=True)
         bosses = []
-        for faction in FACTION_LIST:
+        for faction in os.listdir("./data/"):
             faction_data = FactionData.load_data(faction)
             cards = faction_data.get_card_instances()
             if faction_data.boss is not None:
