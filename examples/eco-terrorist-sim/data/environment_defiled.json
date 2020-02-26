@@ -1,0 +1,133 @@
+{
+    "faction": "Environment - Defiled",
+    "layout": "environment_defiled",
+    "cards": [{
+            "name": "Barren",
+            "effect": {
+                "play": "If there are at least one other `Barren` in play, remove both `Barren`. Add a `Wasteland` to the top of deck.",
+                "damage": "A random `Forest` on play becomes `Barren`",
+                "repair": "Becomes `Forest`"
+            },
+            "count": 8
+        },
+        {
+            "name": "Wasteland",
+            "effect": {
+                "play": "Add `Global Warming` to deck.",
+                "damage": "Damaging player lose 2 health. A `Barren` on play becomes `Wasteland`.",
+                "repair": "Becomes `Barren`."
+            },
+            "count": 8
+        },
+        {
+            "name": "Global Warming",
+            "effect": {
+                "play": "Deal 1 damage to both players. Draw and play another environment card.",
+                "damage": "Add `Global Warming` to deck.",
+                "repair": "Exhaust"
+            },
+            "count": 8
+        },
+        {
+            "name": "Extreme Weather",
+            "effect": {
+                "play": "Both players discard 1 card from hand.",
+                "damage": "Toss a coin; on head, add a `Drought` to the deck; on tails, add a `Hurricane` to the deck.",
+                "repair": "Becomes `Rainfall`"
+            },
+            "count": 8
+        },
+        {
+            "name": "Dry Spell",
+            "effect": {
+                "play": "Becomes `Drought` when discarded",
+                "damage": "Becomes `Drought`",
+                "repair": "Exhaust"
+            },
+            "count": 8
+        },
+        {
+            "name": "Drought",
+            "effect": {
+                "disaster": "",
+                "play": "Deal 2 damage to everything on the field. Stays on the field unless Rainfall or Clean Water is also on the field, otherwise Exhaust.",
+                "damage": "Damaging player loses 10 health.",
+                "repair": "Exhaust"
+            },
+            "count": 8
+        },
+        {
+            "name": "Tropical Storm",
+            "effect": {
+                "play": "Becomes `Hurricane` when discarded.",
+                "damage": "Becomes `Hurricane`",
+                "repair": "Exhaust"
+            },
+            "count": 8
+        },
+        {
+            "name": "Hurricane",
+            "effect": {
+                "disaster": "",
+                "play": "Deal 5 damage to everything on the field. Exhaust.",
+                "damage": "Damaging player loses 10 health.",
+                "repair": "Exhaust"
+            },
+            "count": 8
+        },
+        {
+            "name": "Haze",
+            "effect": {
+                "play": "All cards loses 1 combat while this card is in play.",
+                "damage": "Becomes `Thick Smog`. Add `Global Warming` to deck.",
+                "repair": "Becomes `Clear Sky`."
+            },
+            "count": 8
+        },
+        {
+            "name": "Thick Smog",
+            "effect": {
+                "play": "All cards loses 3 combat while this card is in play.",
+                "damage": "Add 3 `Global Warming` to deck.",
+                "repair": "Becomes `Haze`"
+            },
+            "count": 8
+        },
+        {
+            "name": "Polluted Waters",
+            "effect": {
+                "play": "Both players discard a card",
+                "damage": "Becomes `Algae Bloom`",
+                "repair": "Becomes `Clean Water`"
+            },
+            "count": 8
+        },
+        {
+            "name": "Algae Bloom",
+            "effect": {
+                "play": "Units cost 3 Capital to play",
+                "damage": "Becomes `Groundwater Poisoning`",
+                "repair": "Becomes `Poluted Waters`"
+            },
+            "count": 8
+        },
+        {
+            "name": "Groundwater Poisoning",
+            "effect": {
+                "disaster": "",
+                "play": "You can't `tap` units or play actions unless it would repair this card.",
+                "damage": "Damaging player loses 10 health.",
+                "repair": "Discard"
+            },
+            "count": 8
+        },
+        {
+            "name": "Apocalypse",
+            "effect": {
+                "end": "When played, the player with the most `Space Shuttles` in deck wins"
+            },
+            "flavor": "And so it was said, that humanity will reach for the stars; not because we want to, but because we must.",
+            "count": 1
+        }
+    ]
+}

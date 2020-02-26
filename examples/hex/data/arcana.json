@@ -1,11 +1,11 @@
 {
     "faction": "Arcana",
+    "layout": "arcana",
     "cards": [
         {
             "name": "Clockwork Goblin",
             "effect": {
-                "hex": "Both players draw 1 card.",
-                "ancestor": "Either player may place this card on top of this minion and activate this card's /Hex/ ability (this counts as a Hex)."
+                "hex": "Both players draw 1 card."
             },
             "flavor": "A mechanical mercenary that can reassemble itself.",
             "count": 2
@@ -13,8 +13,8 @@
         {
             "name": "Cursed Doll",
             "effect": {
-                "hex": "Select 2 friendly minions. One takes 2 damage, the other heals 4.",
-                "reshuffle": "You may choose to reshuffle another card instead of this card."
+                "hex": "Select 2 friendly minions. One takes 2 damage, the other heals 2.",
+                "reshuffle": "You may choose to reshuffle another card instead of this card, from your hand or any of the minion's /ancestry/."
             },
             "flavor": "Being next to one of these can make one better or worse.",
             "count": 2
@@ -50,7 +50,7 @@
             "name": "Half-Nova",
             "effect": {
                 "hex": "Activate this minion's /Command/ effect, and then activate it again if the opposing minion has lower HP that this minion.",
-                "command": "Deal 1 damage to the opposing minion. If the opposing minion does not have less HP than this minion, deal 1 more damage to it."
+                "command": "Deal 2 damage to the opposing minion."
             },
             "flavor": "A serpent statue that feels very much alive.",
             "count": 2
@@ -59,7 +59,7 @@
             "name": "Clayman",
             "effect": {
                 "hex": "Reshuffle the top 3 cards in this minion's /ancestry/. If this minion has less than 3 cards in its /ancestry/, reshuffle all cards in its /ancestry/ deal 2 damage to itself.",
-                "ancestor": "Whenever this minion deals damage, heal its HP by 2."
+                "ancestor": "Whenever this minion deals damage, heal its HP by 1."
             },
             "flavor": "A humanoid monster made of chocolate.",
             "count": 2
@@ -67,7 +67,7 @@
         {
             "name": "House of Tricks",
             "effect": {
-                "hex": "Reshuffle any card from this minion's /ancestry/. If the reshuffled card has a /hex/ effect, activate the /Hex/ effect of a minion of your choice.",
+                "hex": "Reshuffle any card from this minion's /ancestry/. If the reshuffled card has a /hex/ effect, activate it.",
                 "trait": "Whenever the opposing minion activates any of its effect, once it is resolved, activate this minion's /hex/ effect."
             },
             "flavor": "Mysterious house with moving furnitures.",
@@ -77,7 +77,7 @@
             "name": "Arcana Golem",
             "effect": {
                 "hex": "Switch with a minion on the left or on the right.",
-                "switch": "Once before the switch and once after, activate the /Hex/ effect of the switching minion."
+                "switch": "Before the switch, activate the /Hex/ effect of the switching minion. After the switch, activate the /Hex/ effect of the switching minion again."
             },
             "flavor": "A towering golem overflowing with magic.",
             "count": 2

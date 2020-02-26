@@ -1,5 +1,6 @@
 {
     "faction":"Crusader",
+    "layout": "crusader",
     "cards": [
         {
             "name": "Prince of Dawn",
@@ -32,7 +33,7 @@
         {
             "name": "Mounted Warbeast",
             "effect": {
-                "command": "Deal 2 damage to minions adjacent to the opposing minion."
+                "command": "Deal 2 damage to both minions adjacent to the opposing minion."
             },
             "flavor": "Tamed rhinos has proven to be untamed.",
             "count": 2
@@ -40,8 +41,8 @@
         {
             "name": "Flagbearer Noah",
             "effect": {
-                "command": "Heal this minion by 2.",
-                "trait": "Whenever a friendly minion is about to take damage, activate the /Command/ effect of this minion, and change the damaging target to this minion."
+                "command": "Heal this minion by 1.",
+                "trait": "Whenever a friendly minion is about to take damage, change the damage target to this minion."
             },
             "flavor": "A man of faith among the bloodied hands.",
             "count": 2
@@ -66,8 +67,8 @@
         {
             "name": "Heavy Arms",
             "effect": {
-                "trait": "Any damage this minion receives will be reduced by 2.",
-                "ancestor": "Whenever this minion activates a /Command/ effect, deal 2 damage to itself."
+                "trait": "Any damage this minion receives will be reduced by 1.",
+                "ancestor": "Whenever this minion activates a /Command/ effect, deal 1 damage to itself."
             },
             "flavor": "His gigantic shield can sometimes be a burden.",
             "count": 2
@@ -84,7 +85,7 @@
         {
             "name": "Golden Wings",
             "effect": {
-                "hex": "You can choose to put the top card of this minion's /ancestry/ over this minion (and become the minion). No /Hex/ effect is activated.",
+                "hex": "You can choose to put the top card of this minion's /ancestry/ over this minion (and become the minion). No /Hex/ effect is activated from that minion.",
                 "ancestor": "When this minion is going to take damage, you can reshuffle this card, then reduce the damage taken to 0."
             },
             "flavor": "Any man with wings is no longer a man.",

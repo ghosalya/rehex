@@ -1,0 +1,38 @@
+{
+    "faction": "Environment",
+    "layout": "environment",
+    "cards": [
+        {
+            "name": "Forest",
+            "effect": {
+                "damage": "Becomes `Barren`",
+                "repair": "Repairing player gains 2 capital and 2 health"
+            },
+            "count": 8
+        },
+        {
+            "name": "Rainfall",
+            "effect": {
+                "damage": "Becomes `Extreme Weather`",
+                "repair": "Repairing player immediately draws 1 card"
+            },
+            "count": 8
+        },
+        {
+            "name": "Clear Sky",
+            "effect": {
+                "damage": "Becomes `Haze`. Add Global Warming to deck.",
+                "repair": "Add a card from your discard pile to the top of your deck."
+            },
+            "count": 8
+        },
+        {
+            "name": "Clean Water",
+            "effect": {
+                "damage": "Becomes `Polluted Waters`.",
+                "repair": "Repairing player gains 5 health."
+            },
+            "count": 8
+        }
+    ]
+}

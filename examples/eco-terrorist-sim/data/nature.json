@@ -1,0 +1,48 @@
+{
+    "faction": "Nature",
+    "layout": "nature",
+    "cards": [
+        {
+            "name": "Camouflage Soldier",
+            "effect": {
+                "passive": "Increase combat by 1 for each \"Forest\".",
+                "ally": "Gain 2 health."
+            },
+            "value": {
+                "cost": 3,
+                "combat": 1,
+                "health": 3
+            },
+            "flavor": "buzz buzz",
+            "count": 1
+        },
+        {
+            "name": "Solar Panel Outpost",
+            "effect": {
+                "tap": "Gain 1 capital, and gain 3 extra per \"Clear Sky\" played."
+            },
+            "value": {
+                "cost": 3,
+                "combat": 0,
+                "health": 5
+            },
+            "flavor": "buzz buzz",
+            "count": 1
+        },
+        {
+            "name": "The Nerves of God",
+            "effect": {
+                "tap": "Tap: Spend 5 Capital to increase this card's health by 5. If this card's current health reaches 40, win the game",
+                "ally": "Tap: Destroy a random enemy card.",
+                "impervious": ""
+            },
+            "value": {
+                "cost": 15,
+                "combat": 0,
+                "health": 15
+            },
+            "flavor": "buzz buzz",
+            "count": 1
+        }
+    ]
+}

@@ -1,5 +1,6 @@
 {
     "faction": "Core",
+    "layout": "core",
     "cards": [
         {
             "name": "Slime",
