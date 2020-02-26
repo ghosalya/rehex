@@ -5,15 +5,34 @@
         {
             "name": "Forest",
             "effect": {
-                "play": "P1 gains (2) health. P2 gains (2) health.",
-                "damage": "When damaged, it reduces the player's value by 1. When it his 0, reduces opponent's value instead. Becomes Barrens when both values are 0.",
-                "repair": "Repairing player's value increase by 1 (no upper limit)."
+                "damage": "Becomes `Barren`",
+                "repair": "Repairing player gains 2 capital and 2 health"
             },
-            "value": {
-                "value": 4
+            "count": 8
+        },
+        {
+            "name": "Rainfall",
+            "effect": {
+                "damage": "Becomes `Extreme Weather`",
+                "repair": "Repairing player immediately draws 1 card"
             },
-            "flavor": "buzz buzz",
-            "count": 1
+            "count": 8
+        },
+        {
+            "name": "Clear Sky",
+            "effect": {
+                "damage": "Becomes `Haze`. Add Global Warming to deck.",
+                "repair": "Add a card from your discard pile to the top of your deck."
+            },
+            "count": 8
+        },
+        {
+            "name": "Clean Water",
+            "effect": {
+                "damage": "Becomes `Polluted Waters`.",
+                "repair": "Repairing player gains 5 health."
+            },
+            "count": 8
         }
     ]
 }

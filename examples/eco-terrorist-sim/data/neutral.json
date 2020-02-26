@@ -1,0 +1,98 @@
+{
+    "faction": "Neutral",
+    "layout": "neutral",
+    "cards": [
+        {
+            "name": "Lumberjack",
+            "effect": {
+                "action": "Damage a forest and gain 3 Capital, or pay 3 Capital to exhaust."
+            },
+            "value": {
+                "cost": 1
+            },
+            "count": 4
+        },
+        {
+            "name": "Round Up",
+            "effect": {
+                "action": "Discard all cards in your hand, and draw that many"
+            },
+            "value": {
+                "cost": 1
+            },
+            "count": 2
+        },
+        {
+            "name": "Gather Recruits",
+            "effect": {
+                "action": "Discard a card. Draw 2 cards"
+            },
+            "value": {
+                "cost": 2
+            },
+            "count": 4
+        },
+        {
+            "name": "Industrial Block",
+            "effect": {
+                "unit": "",
+                "tap": "Gain 4 capitals, and damage an environment of your choice."
+            },
+            "value": {
+                "cost": 2,
+                "combat": "-",
+                "health": 5
+            },
+            "count": 6
+        },
+        {
+            "name": "Marine Trader",
+            "effect": {
+                "unit": "",
+                "tap": "If there is at least one `Clean Waters`, gain 3 capitals."
+            },
+            "value": {
+                "cost": 2,
+                "combat": "-",
+                "health": 4
+            },
+            "count": 4
+        },
+        {
+            "name": "Solar Generator",
+            "effect": {
+                "unit": "",
+                "passive": "At the start of your turn, gain 2 capitals for each `Clear Sky` on play."
+            },
+            "value": {
+                "cost": 2,
+                "combat": "-",
+                "health": 6
+            },
+            "count": 4
+        },
+        {
+            "name": "Soldier",
+            "effect": {
+                "unit": ""
+            },
+            "value": {
+                "cost": 2,
+                "combat": 2,
+                "health": 4
+            },
+            "count": 8
+        },
+        {
+            "name": "Space Shuttle",
+            "effect": {
+                "action": "The next card you buy, if it costs 6 or more, it cost 3 less to purchase."
+            },
+            "value": {
+                "cost": 6
+            },
+            "flavor": "(Alt: the next card you purchase goes to the top of your deck.)",
+            "count": 8
+        }
+    ]
+}
